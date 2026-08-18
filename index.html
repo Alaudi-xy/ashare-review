@@ -114,6 +114,16 @@
   .bar-track{flex:1;background:#21262d;border-radius:6px;height:18px;overflow:hidden;position:relative}
   .bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:#fff;font-size:11px;font-weight:700}
   .bar-val{width:62px;flex:0 0 62px;text-align:right;font-size:12.5px;font-weight:700}
+  /* 板块 TOP 方块卡片网格 */
+  .sector-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:6px}
+  .sector-card{border:1px solid var(--line);border-radius:9px;padding:9px 6px;text-align:center;background:#0d1117;display:flex;flex-direction:column;justify-content:center;min-height:58px}
+  .sector-card .nm{font-size:12.5px;color:#c9d1d9;line-height:1.3}
+  .sector-card .pct{font-size:15px;font-weight:800;margin-top:5px}
+  .sector-card.up{border-color:rgba(248,81,73,.45);background:rgba(248,81,73,.10)}
+  .sector-card.up .pct{color:#f85149}
+  .sector-card.down{border-color:rgba(63,185,80,.45);background:rgba(63,185,80,.10)}
+  .sector-card.down .pct{color:#3fb950}
+  @media(max-width:680px){.sector-grid{grid-template-columns:repeat(3,1fr)}.sector-card .pct{font-size:14px}}
   /* ===== 数据小卡 ===== */
   .mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:6px}
   .mini{border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;background:#0d1117}
@@ -258,18 +268,18 @@
     <h2>③ 🔄 板块轮动图谱 <span class="tag">涨幅TOP10 · 跌幅TOP · 轮动特征</span></h2>
     <div class="concl">资金高低切换至<b>农业（粮食/猪肉/转基因）+ 石油石化/油气 + 银行/煤炭权重 + 机器人（宇树）</b>，农林牧渔行业主力净流入约34亿元居全市场首位；与此前领涨的<b>科技算力链（电子/通信/计算机）遭主力大幅净流出</b>（电子-148亿、通信-110亿、计算机-98亿），能源金属、影视院线、游戏、证券、稀土、算力概念、AI应用等走弱。当日由"科技普涨"转为"农业/防御领涨、成长回撤"的轮动格局。</div>
 
-    <div class="sec-title">概念/行业 涨幅 TOP10（条形长度按涨幅比例，最长=当日最大 +5.53% 生物育种）</div>
-    <div class="detail">
-      <div class="bar-row"><span class="bar-label">生物育种</span><div class="bar-track"><div class="bar-fill up" style="width:100%"></div></div><span class="bar-val up">+5.53%</span></div>
-      <div class="bar-row"><span class="bar-label">反关税</span><div class="bar-track"><div class="bar-fill up" style="width:98.4%"></div></div><span class="bar-val up">+5.44%</span></div>
-      <div class="bar-row"><span class="bar-label">一号文件</span><div class="bar-track"><div class="bar-fill up" style="width:87.5%"></div></div><span class="bar-val up">+4.84%</span></div>
-      <div class="bar-row"><span class="bar-label">粮食概念</span><div class="bar-track"><div class="bar-fill up" style="width:83.2%"></div></div><span class="bar-val up">+4.60%</span></div>
-      <div class="bar-row"><span class="bar-label">转基因/种业</span><div class="bar-track"><div class="bar-fill up" style="width:72.3%"></div></div><span class="bar-val up">+4.00%</span></div>
-      <div class="bar-row"><span class="bar-label">农林牧渔(行业)</span><div class="bar-track"><div class="bar-fill up" style="width:65.6%"></div></div><span class="bar-val up">+3.63%</span></div>
-      <div class="bar-row"><span class="bar-label">猪肉概念</span><div class="bar-track"><div class="bar-fill up" style="width:63.3%"></div></div><span class="bar-val up">+3.50%</span></div>
-      <div class="bar-row"><span class="bar-label">农化制品</span><div class="bar-track"><div class="bar-fill up" style="width:50.6%"></div></div><span class="bar-val up">+2.80%</span></div>
-      <div class="bar-row"><span class="bar-label">石油石化(行业)</span><div class="bar-track"><div class="bar-fill up" style="width:34.7%"></div></div><span class="bar-val up">+1.92%</span></div>
-      <div class="bar-row"><span class="bar-label">油气/油服</span><div class="bar-track"><div class="bar-fill up" style="width:27.1%"></div></div><span class="bar-val up">+1.50%</span></div>
+    <div class="sec-title">概念/行业 涨幅 TOP10（方块为板块名称与涨跌幅，红涨）</div>
+    <div class="detail sector-grid">
+      <div class="sector-card up"><div class="nm">生物育种</div><div class="pct">+5.53%</div></div>
+      <div class="sector-card up"><div class="nm">反关税</div><div class="pct">+5.44%</div></div>
+      <div class="sector-card up"><div class="nm">一号文件</div><div class="pct">+4.84%</div></div>
+      <div class="sector-card up"><div class="nm">粮食概念</div><div class="pct">+4.60%</div></div>
+      <div class="sector-card up"><div class="nm">转基因/种业</div><div class="pct">+4.00%</div></div>
+      <div class="sector-card up"><div class="nm">农林牧渔(行业)</div><div class="pct">+3.63%</div></div>
+      <div class="sector-card up"><div class="nm">猪肉概念</div><div class="pct">+3.50%</div></div>
+      <div class="sector-card up"><div class="nm">农化制品</div><div class="pct">+2.80%</div></div>
+      <div class="sector-card up"><div class="nm">石油石化(行业)</div><div class="pct">+1.92%</div></div>
+      <div class="sector-card up"><div class="nm">油气/油服</div><div class="pct">+1.50%</div></div>
     </div>
 
     <div class="sec-title detail">涨幅 TOP 明细（龙头 · 驱动逻辑 · 主力净流入）</div>
@@ -290,18 +300,18 @@
       <p class="muted" style="margin-top:6px">概念涨幅取午间收盘口径（生物育种+5.53%、反关税+5.44%、一号文件+4.84%）；行业涨幅/主力净流入为收盘口径（农林牧渔+34.1亿、石油石化+4.7亿）。净流入综合东方财富行情指标与证券日报午间数据交叉验证。</p>
     </div>
 
-    <div class="sec-title">概念/行业 跌幅 TOP（条形长度按跌幅比例，最长=当日最大 -2.26% 能源金属）</div>
-    <div class="detail">
-      <div class="bar-row"><span class="bar-label">能源金属</span><div class="bar-track"><div class="bar-fill down" style="width:100%"></div></div><span class="bar-val down">-2.26%</span></div>
-      <div class="bar-row"><span class="bar-label">影视院线</span><div class="bar-track"><div class="bar-fill down" style="width:78.8%"></div></div><span class="bar-val down">-1.78%</span></div>
-      <div class="bar-row"><span class="bar-label">游戏</span><div class="bar-track"><div class="bar-fill down" style="width:66.4%"></div></div><span class="bar-val down">≈-1.5%</span></div>
-      <div class="bar-row"><span class="bar-label">证券/非银</span><div class="bar-track"><div class="bar-fill down" style="width:62.0%"></div></div><span class="bar-val down">≈-1.4%</span></div>
-      <div class="bar-row"><span class="bar-label">稀土</span><div class="bar-track"><div class="bar-fill down" style="width:57.5%"></div></div><span class="bar-val down">≈-1.3%</span></div>
-      <div class="bar-row"><span class="bar-label">算力概念</span><div class="bar-track"><div class="bar-fill down" style="width:53.1%"></div></div><span class="bar-val down">≈-1.2%</span></div>
-      <div class="bar-row"><span class="bar-label">医疗服务</span><div class="bar-track"><div class="bar-fill down" style="width:44.2%"></div></div><span class="bar-val down">≈-1.0%</span></div>
-      <div class="bar-row"><span class="bar-label">广告营销</span><div class="bar-track"><div class="bar-fill down" style="width:44.2%"></div></div><span class="bar-val down">≈-1.0%</span></div>
-      <div class="bar-row"><span class="bar-label">AI应用</span><div class="bar-track"><div class="bar-fill down" style="width:39.8%"></div></div><span class="bar-val down">≈-0.9%</span></div>
-      <div class="bar-row"><span class="bar-label">创新药/商业航天</span><div class="bar-track"><div class="bar-fill down" style="width:39.8%"></div></div><span class="bar-val down">≈-0.9%</span></div>
+    <div class="sec-title">概念/行业 跌幅 TOP（方块为板块名称与涨跌幅，绿跌）</div>
+    <div class="detail sector-grid">
+      <div class="sector-card down"><div class="nm">能源金属</div><div class="pct">-2.26%</div></div>
+      <div class="sector-card down"><div class="nm">影视院线</div><div class="pct">-1.78%</div></div>
+      <div class="sector-card down"><div class="nm">游戏</div><div class="pct">≈-1.5%</div></div>
+      <div class="sector-card down"><div class="nm">证券/非银</div><div class="pct">≈-1.4%</div></div>
+      <div class="sector-card down"><div class="nm">稀土</div><div class="pct">≈-1.3%</div></div>
+      <div class="sector-card down"><div class="nm">算力概念</div><div class="pct">≈-1.2%</div></div>
+      <div class="sector-card down"><div class="nm">医疗服务</div><div class="pct">≈-1.0%</div></div>
+      <div class="sector-card down"><div class="nm">广告营销</div><div class="pct">≈-1.0%</div></div>
+      <div class="sector-card down"><div class="nm">AI应用</div><div class="pct">≈-0.9%</div></div>
+      <div class="sector-card down"><div class="nm">创新药/商业航天</div><div class="pct">≈-0.9%</div></div>
     </div>
 
     <div class="sec-title detail">跌幅 TOP 明细（净流出 · 领跌 · 下跌原因）</div>
