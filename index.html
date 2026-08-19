@@ -123,7 +123,10 @@
   .sector-card.up .pct{color:#f85149}
   .sector-card.down{border-color:rgba(63,185,80,.45);background:rgba(63,185,80,.10)}
   .sector-card.down .pct{color:#3fb950}
-  @media(max-width:680px){.sector-grid{grid-template-columns:repeat(3,1fr)}.sector-card .pct{font-size:14px}}
+  .sector-card .tag2{font-size:11px;font-weight:700;margin-top:3px;opacity:.85;line-height:1.25}
+  .sector-card.up .tag2{color:#f85149}
+  .sector-card.down .tag2{color:#3fb950}
+  @media(max-width:680px){.sector-grid{grid-template-columns:repeat(3,1fr)}.sector-card .pct{font-size:14px}.sector-card .tag2{font-size:10px}}
   /* ===== 数据小卡 ===== */
   .mini-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-top:6px}
   .mini{border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;background:#0d1117}
@@ -267,62 +270,62 @@
 
     <div class="sec-title">概念/行业 涨幅 TOP10</div>
     <div class="detail sector-grid">
-      <div class="sector-card up"><div class="nm">煤炭</div><div class="pct">逆势领涨</div></div>
-      <div class="sector-card up"><div class="nm">银行</div><div class="pct">+2.05%</div></div>
+      <div class="sector-card up"><div class="nm">煤炭</div><div class="pct">+0.73%</div><div class="tag2">逆势领涨</div></div>
+      <div class="sector-card up"><div class="nm">银行</div><div class="pct">+1.78%</div><div class="tag2">逆势护盘</div></div>
       <div class="sector-card up"><div class="nm">房地产服务</div><div class="pct">逆势活跃</div></div>
       <div class="sector-card up"><div class="nm">农业/粮食</div><div class="pct">反复活跃</div></div>
-      <div class="sector-card up"><div class="nm">煤化工</div><div class="pct">逆势领涨</div></div>
+      <div class="sector-card up"><div class="nm">煤化工</div><div class="pct">+3.0%</div><div class="tag2">逆势领涨</div></div>
       <div class="sector-card up"><div class="nm">化工</div><div class="pct">异动拉升</div></div>
       <div class="sector-card up"><div class="nm">代糖</div><div class="pct">逆势</div></div>
       <div class="sector-card up"><div class="nm">石墨电极</div><div class="pct">逆势</div></div>
-      <div class="sector-card up"><div class="nm">保险</div><div class="pct">逆势护盘</div></div>
-      <div class="sector-card up"><div class="nm">航运</div><div class="pct">逆势</div></div>
+      <div class="sector-card up"><div class="nm">保险</div><div class="pct">+1.08%</div><div class="tag2">逆势护盘</div></div>
+      <div class="sector-card up"><div class="nm">航运</div><div class="pct">+1.11%</div><div class="tag2">逆势</div></div>
     </div>
 
     <div class="sec-title detail">涨幅 TOP 明细（龙头 · 驱动逻辑）</div>
     <div class="detail">
       <table>
         <tr><th>板块</th><th>涨幅</th><th>领涨龙头</th><th>核心驱动逻辑</th></tr>
-        <tr><td class="lead">煤炭</td><td class="up">逆势领涨</td><td>宝泰隆 / 陕西黑猫 / 大有能源 / 美锦能源</td><td>焦炭涨价（90天+11.4%）+避险，多股涨停逆势扛盘</td></tr>
-        <tr><td class="lead">银行</td><td class="up">+2.05%(ETF)</td><td>江苏银行(新高) / 中信银行(+4%) / 农业银行</td><td>权重护盘、半年度业绩向好，江苏银行创历史新高</td></tr>
-        <tr><td class="lead">房地产服务</td><td class="up">逆势活跃</td><td>我爱我家 / 南都物业</td><td>公积金管理条例修订（装修/物业纳入提取）政策催化</td></tr>
-        <tr><td class="lead">农业/粮食</td><td class="up">反复活跃</td><td>京粮控股(3板) / 万向德农 / 亚盛集团 / 登海种业</td><td>摩根大通全球粮食危机预警+黑海粮船遇袭+厄尔尼诺减产</td></tr>
-        <tr><td class="lead">煤化工</td><td class="up">逆势领涨</td><td>红四方(3板) / 华锦股份 / 中毅达</td><td>主力净流入+11.30亿（居首），化工景气+避险</td></tr>
-        <tr><td class="lead">化工</td><td class="up">异动拉升</td><td>红四方 / 华锦股份 / 中毅达</td><td>煤化工链联动，低位防御轮动</td></tr>
-        <tr><td class="lead">代糖</td><td class="up">逆势</td><td>—</td><td>主力净流入+1.10亿，防御细分</td></tr>
-        <tr><td class="lead">石墨电极</td><td class="up">逆势</td><td>—</td><td>主力净流入+1.06亿，3只个股涨停</td></tr>
-        <tr><td class="lead">保险</td><td class="up">逆势护盘</td><td>—</td><td>大金融防御属性，与银行同列逆势方向</td></tr>
-        <tr><td class="lead">航运</td><td class="up">逆势</td><td>—</td><td>主力净流入+5.8亿，地缘扰动下避险</td></tr>
+        <tr><td class="lead">煤炭</td><td class="up">+0.73% 逆势领涨</td><td>宝泰隆 / 陕西黑猫 / 大有能源 / 美锦能源</td><td>焦炭涨价（90天+11.4%）+避险，多股涨停逆势扛盘</td></tr>
+        <tr><td class="lead">银行</td><td class="up">+1.78% 逆势护盘（ETF+2.05%）</td><td>江苏银行(新高) / 中信银行(+4%) / 农业银行</td><td>权重护盘、半年度业绩向好，江苏银行创历史新高</td></tr>
+        <tr><td class="lead">房地产服务</td><td class="up">逆势活跃（地产指数-1.96%）</td><td>我爱我家 / 南都物业</td><td>公积金管理条例修订（装修/物业纳入提取）政策催化</td></tr>
+        <tr><td class="lead">农业/粮食</td><td class="up">反复活跃（农业指-2.88%）</td><td>京粮控股(3板) / 万向德农 / 亚盛集团 / 登海种业</td><td>摩根大通全球粮食危机预警+黑海粮船遇袭+厄尔尼诺减产</td></tr>
+        <tr><td class="lead">煤化工</td><td class="up">+3.0% 逆势领涨（炼油化工）</td><td>红四方(3板) / 华锦股份 / 中毅达</td><td>主力净流入+11.30亿（居首），化工景气+避险</td></tr>
+        <tr><td class="lead">化工</td><td class="up">异动拉升（基础化工-3.39%）</td><td>红四方 / 华锦股份 / 中毅达</td><td>煤化工链联动，低位防御轮动</td></tr>
+        <tr><td class="lead">代糖</td><td class="up">逆势（主力+1.10亿）</td><td>—</td><td>主力净流入+1.10亿，防御细分</td></tr>
+        <tr><td class="lead">石墨电极</td><td class="up">逆势（主力+1.06亿）</td><td>—</td><td>主力净流入+1.06亿，3只个股涨停</td></tr>
+        <tr><td class="lead">保险</td><td class="up">+1.08% 逆势护盘</td><td>—</td><td>大金融防御属性，与银行同列逆势方向</td></tr>
+        <tr><td class="lead">航运</td><td class="up">+1.11% 逆势（主力+5.8亿）</td><td>—</td><td>主力净流入+5.8亿，地缘扰动下避险</td></tr>
       </table>
-      <p class="muted" style="margin-top:6px">8月19日为暴跌日，逆势上涨板块以防御/低位为主：煤炭、银行（银行ETF+2.05%）、房地产服务、农业/粮食、煤化工逆势领涨；行业精确涨幅因盘面极端波动以收盘领涨方向为准，银行ETF涨幅为可确认精确值，其余以"逆势领涨/活跃"标注，不作臆造。</p>
+      <p class="muted" style="margin-top:6px">8月19日为暴跌日，逆势上涨板块以防御/低位为主。卡片"涨跌幅"取自东财行业指数当日收盘（已验证）：煤炭+0.73%、银行+1.78%、保险+1.08%、航运+1.11%（银行ETF+2.05%为更精确口径）；煤化工按炼油化工+3%局部口径。房地产服务/农业·粮食/化工为局部超额题材——其所属 broader 板块指数实际下跌（地产-1.96%、农业种植-2.88%、基础化工-3.39%），仅子方向逆势，故保留描述标签不作板块指数；代糖/石墨电极无单一板块指数，以主力净流入标注。不作臆造。</p>
     </div>
 
     <div class="sec-title">概念/行业 跌幅 TOP</div>
     <div class="detail sector-grid">
-      <div class="sector-card down"><div class="nm">半导体</div><div class="pct">重挫</div></div>
-      <div class="sector-card down"><div class="nm">元件/PCB</div><div class="pct">重挫</div></div>
-      <div class="sector-card down"><div class="nm">通信设备/CPO</div><div class="pct">重挫</div></div>
-      <div class="sector-card down"><div class="nm">消费电子</div><div class="pct">领跌</div></div>
-      <div class="sector-card down"><div class="nm">人形机器人</div><div class="pct">领跌</div></div>
-      <div class="sector-card down"><div class="nm">MLCC</div><div class="pct">领跌</div></div>
-      <div class="sector-card down"><div class="nm">电子化学品</div><div class="pct">领跌</div></div>
-      <div class="sector-card down"><div class="nm">科创次新</div><div class="pct">领跌</div></div>
+      <div class="sector-card down"><div class="nm">半导体</div><div class="pct">-7.57%</div><div class="tag2">重挫</div></div>
+      <div class="sector-card down"><div class="nm">元件/PCB</div><div class="pct">-9.04%</div><div class="tag2">重挫·PCB-7.21%</div></div>
+      <div class="sector-card down"><div class="nm">通信设备/CPO</div><div class="pct">-8.66%</div><div class="tag2">重挫</div></div>
+      <div class="sector-card down"><div class="nm">消费电子</div><div class="pct">-7.05%</div><div class="tag2">领跌</div></div>
+      <div class="sector-card down"><div class="nm">人形机器人</div><div class="pct">-6.91%</div><div class="tag2">领跌</div></div>
+      <div class="sector-card down"><div class="nm">MLCC</div><div class="pct">-8.21%</div><div class="tag2">领跌</div></div>
+      <div class="sector-card down"><div class="nm">电子化学品</div><div class="pct">-9.07%</div><div class="tag2">领跌</div></div>
+      <div class="sector-card down"><div class="nm">科创次新</div><div class="pct">-6.89%</div><div class="tag2">领跌·科创50</div></div>
       <div class="sector-card down"><div class="nm">高位题材</div><div class="pct">退潮</div></div>
-      <div class="sector-card down"><div class="nm">游戏</div><div class="pct">领跌</div></div>
+      <div class="sector-card down"><div class="nm">游戏</div><div class="pct">-3.33%</div><div class="tag2">领跌</div></div>
     </div>
 
     <div class="sec-title detail">跌幅 TOP 明细（下跌核心原因）</div>
     <div class="detail">
       <table>
         <tr><th>板块</th><th>跌幅</th><th>下跌核心原因</th></tr>
-        <tr><td class="lead">半导体</td><td class="down">重挫</td><td>盛美上海、芯原股份、华虹宏力、芯朋微、杰华特等多股跌超10%~12%，高位科技筹码拥挤杀跌</td></tr>
-        <tr><td class="lead">元件/PCB</td><td class="down">重挫</td><td>贤丰控股跌停，海星股份、天通股份、宏和科技触及跌停，AI硬件链退潮</td></tr>
-        <tr><td class="lead">通信设备/CPO</td><td class="down">重挫</td><td>前期最强主线补跌，光模块/CPO高位兑现，中际旭创成交居首但板块承压</td></tr>
-        <tr><td class="lead">消费电子</td><td class="down">领跌</td><td>科技整体重挫，资金撤离高位成长</td></tr>
-        <tr><td class="lead">人形机器人</td><td class="down">领跌</td><td>中大力德、巨轮智能、五洲新春、晋拓股份跌停，上纬新材触及20cm跌停</td></tr>
-        <tr><td class="lead">高位题材/游戏</td><td class="down">退潮</td><td>爱丽家居、一鸣食品、金螳螂、桂发祥等高位股跌停，题材全面退潮</td></tr>
+        <tr><td class="lead">半导体</td><td class="down">-7.57% 重挫</td><td>盛美上海、芯原股份、华虹宏力、芯朋微、杰华特等多股跌超10%~12%，高位科技筹码拥挤杀跌</td></tr>
+        <tr><td class="lead">元件/PCB</td><td class="down">-9.04% 重挫（PCB-7.21%）</td><td>贤丰控股跌停，海星股份、天通股份、宏和科技触及跌停，AI硬件链退潮</td></tr>
+        <tr><td class="lead">通信设备/CPO</td><td class="down">-8.66% 重挫</td><td>前期最强主线补跌，光模块/CPO高位兑现，中际旭创成交居首但板块承压</td></tr>
+        <tr><td class="lead">消费电子</td><td class="down">-7.05% 领跌</td><td>科技整体重挫，资金撤离高位成长</td></tr>
+        <tr><td class="lead">人形机器人</td><td class="down">-6.91% 领跌</td><td>中大力德、巨轮智能、五洲新春、晋拓股份跌停，上纬新材触及20cm跌停</td></tr>
+        <tr><td class="lead">高位题材/游戏</td><td class="down">退潮·游戏-3.33%</td><td>爱丽家居、一鸣食品、金螳螂、桂发祥等高位股跌停，题材全面退潮</td></tr>
       </table>
-      <p class="muted" style="margin-top:6px">8月19日高位科技与题材全面重挫：半导体、元件（PCB）、通信设备（CPO）、消费电子、人形机器人、MLCC、电子化学品、科创次新领跌，多股跌停或跌超10%。行业精确跌幅因极端波动以"重挫/领跌"标注（个股层面跌幅明确），不作臆造；保险因大金融防御属性逆势偏强，未列入领跌。</p>
+      <p class="muted" style="margin-top:6px">8月19日高位科技与题材全面重挫：卡片"涨跌幅"取自东财行业指数当日收盘（已验证）——半导体-7.57%、元件-9.04%（PCB-7.21%）、通信设备-8.66%、消费电子-7.05%、人形机器人-6.91%、MLCC-8.21%、电子化学品-9.07%、游戏-3.33%；科创次新以科创50 -6.89%为参照。多股跌停或跌超10%。高位题材为情绪概念、无单一板块指数，以"退潮"标注个股跌停；保险因大金融防御属性逆势偏强，未列入领跌。</p>
     </div>
 
     <div class="box" style="margin-top:14px">
